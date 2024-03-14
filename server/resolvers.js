@@ -1,4 +1,4 @@
-const Post = require('./post');
+const Post = require('./Post');
 
 //resolvers for hello and getAll
 const resolvers = {
