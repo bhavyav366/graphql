@@ -1,3 +1,4 @@
+//setting up db schema Post
 const mongoose = require('mongoose');
 const PostSchema = new mongoose.Schema({
     title: String,

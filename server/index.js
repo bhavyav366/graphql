@@ -7,7 +7,7 @@ const resolvers = require('./resolvers')
 
 
 
-
+// mongodb connection
 const URL = "mongodb+srv://bhavya:bhavya12345@atlascluster.t5lfxfj.mongodb.net/";
 
 mongoose.connect(URL, {
@@ -22,19 +22,6 @@ mongoose.connect(URL, {
         console.error('Error connecting to MongoDB:', err);
     });
 
-
-/*const URL = "mongodb+srv://bhavya:<bhavya12345>@atlascluster.t5lfxfj.mongodb.net/"
-
-mongoose.connect(URL, {
-
-    })
-    .then(() => {
-        console.log('DB Connected');
-        // Your code here
-    })
-    .catch(err => {
-        console.error('Error connecting to MongoDB:', err);
-    });*/
 
 
 
