@@ -7,6 +7,7 @@ const resolvers = require('./resolvers')
 
 
 
+
 // mongodb connection
 const URL = "mongodb+srv://bhavya:bhavya12345@atlascluster.t5lfxfj.mongodb.net/";
 
@@ -33,6 +34,12 @@ const startServer = async() => {
     });
     await apolloServer.start();
     apolloServer.applyMiddleware({ app }); // Change apolloServerServer to apolloServer
+    app.get("/",(req,res) => {
+    res.send("hello from server")
+})
+    app.post("/",(req,res)=> {
+    res.send("hello from backend2")
+})
     app.listen(4000, () => console.log("Server is running at http://localhost:4000"));
 };
 
