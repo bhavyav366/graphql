@@ -14,7 +14,7 @@ import {
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: new HttpLink({
-    uri: "http://localhost:4000/graphql",
+    uri: "https://graphql-nkx4.onrender.com/graphql",
   }),
 });
 
